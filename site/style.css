@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+:root {
+  --brownDecorParaColor: #c7a17a;
+  --darkBodyColor: #27292b;
+  --whiteHeadTextColor: #fff;
+}
+.hero {
+  height: 100vh;
+  background-image: url(./images/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.transbox {
+  background-color: rgba(45, 45, 45, 0.8);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100vh;
+  font-weight: bold;
+}
+.header {
+  padding-top: 37vh;
+}
+.brown-coffee {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  color: var(--brownDecorParaColor);
+  font-size: 24px;
+}
+.coffeeButton {
+  border-radius: 0;
+  background-color: #c7a17a;
+  border-color: #c7a17a;
+  color: #fff;
+  transition: all 0.25s;
+}
+.coffeeButton:hover {
+  background-color: #27292b;
+  border-color: #27292b;
+}
+.submitButton {
+  width: 100%;
+  transition: all 0.25s;
+}
+.submitButton:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+h1,
+h2,
+h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 115px;
+}
+#aboutCoffee {
+  background-color: #f2f0ec;
+}
+.aboutUsFlex,
+.aboutCoffeeFlex {
+  align-items: center;
+}
+.aboutCoffeeImg img,
+.aboutUsImg img {
+  max-width: 100%;
+}
+.item_box {
+  background-color: #ffdf4f;
+}
+.carousel {
+  width: 800px;
+  max-width: 95%;
+}
+.changeColor {
+  width: 100%;
+  height: 110px;
+  background-image: url(./images/lineb.jpg);
+  margin-bottom: -5px;
+}
+.changeColorWhite {
+  width: 100%;
+  height: 167px;
+  background-image: url(./images/line-w-1.jpg);
+  margin-bottom: -5px;
+}
+#contacts {
+  background-color: var(--darkBodyColor);
+}
+.contacts .rowFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contacts input {
+  border-color: #f2f0ec;
+  background-color: rgba(255, 255, 255, 0.01);
+  color: #fff;
+}
+.contacts input:focus {
+  background-color: rgba(255, 255, 255, 0.01);
+  color: #fff;
+}
+.contacts .box1,
+.contacts .box1 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.phoneInfo,
+.emailInfo {
+  display: flex;
+  align-items: baseline;
+}
+.phoneInfo a,
+.emailInfo a {
+  color: #e1e0e0;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 0.25s;
+}
+.phoneInfo a:hover,
+.emailInfo a:hover {
+  color: #fff;
+}
+.headTextTeamBlock {
+  margin-top: 15px;
+}
+.headTextTeam {
+  font-size: 58px;
+}
+.businessCard {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: solid #f2f0ec;
+}
+.personText {
+  margin: 0 30px;
+}
+.personText h2 {
+  font-size: 34px;
+  color: #c7a17a;
+}
+.personText hr {
+  color: #c7a17a;
+}
+.descPerson {
+  color: #828282;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.card {
+  background: #f8f5f0;
+}
+.card h5 {
+  font-size: 28px;
+}
+.card h5,
+.card p {
+  text-align: left;
+}
+.price {
+  display: flex;
+  align-items: start;
+}
+.price p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  margin: -3px 0 10px 8px;
+}
+.openTime,
+.location {
+  display: flex;
+  align-items: baseline;
+}
+.openTimeText,
+.locationText {
+  margin-left: 20px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 250px;
+}
+footer {
+  background-color: var(--darkBodyColor);
+}
+footer h2 {
+  color: var(--whiteHeadTextColor);
+}
+.globalInfo {
+  display: flex;
+  justify-content: space-around;
+}
+.globalInfo h2,
+.globalInfo i {
+  font-size: 48px;
+}
+.globalInfo p {
+  font-size: 20px;
+  color: #fff;
+}
+.footer {
+  margin-top: 80px;
+}
+.footerNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.copyright p {
+  font-size: 18px;
+}
+ul.socialMedia {
+  list-style: none;
+  display: flex;
+  margin-left: -10px;
+}
+ul.socialMedia li {
+  margin-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 85px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .aboutCoffeeFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUsFlex {
+    flex-direction: column-reverse;
+  }
+  .aboutUsImg {
+    margin-top: 40px;
+  }
+  .contacts .box1,
+  .contacts .box2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  .businessCard {
+    flex-direction: column;
+  }
+  .cardRev {
+    flex-direction: column-reverse;
+  }
+  .personText {
+    margin-top: 25px;
+  }
+  .globalInfo {
+    flex-direction: column;
+    margin-left: 60px;
+  }
+  .globalInfo h2,
+  .globalInfo i {
+    font-size: 36px;
+  }
+  .globalInfo p {
+    font-size: 18px;
+    color: #fff;
+  }
+  .copyright {
+    margin: 0;
+  }
+}
