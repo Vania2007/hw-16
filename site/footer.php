@@ -1,3 +1,5 @@
+<?php
+include 'data.php';?>
     <footer>
       <div class="globalInfo pt-5">
         <div class="openTime">
@@ -7,7 +9,7 @@
           ></i>
           <div class="openTimeText">
             <h2>Open hours</h2>
-            <?php include 'data.php';
+            <?php
           echo <<< EOD
           <p>$time_table</p>
           EOD;
@@ -21,7 +23,7 @@
           ></i>
           <div class="locationText">
             <h2>Location</h2>
-            <?php include 'data.php';
+            <?php
           echo <<< EOD
           <p>$location</p>
           EOD;
@@ -64,7 +66,7 @@
         </div>
         <hr class="cotainer" style="color: aliceblue; margin: 0 100px" />
         <div class="pt-5 px-5 pb-3 text-white text-center copyright">
-          <?php include 'data.php';
+          <?php
           echo <<< EOD
           <p>&copy; Created by <strong>$author</strong></p>
           EOD;
